@@ -1,0 +1,33 @@
+body{
+    background-color:#025159;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightblue;
+}
+
+h1{
+    color:#038C8C ;
+}
+#pre{
+    text-align: center;
+    background-color: #c79669;
+    color: #025159;
+}
+h2{
+    color: #c37052;
+}
+.basic{
+    color: #6972c7;
+    font-weight: bolder;
+}
+.intermediary{
+    color: #c4c769;
+    font-weight: bold;
+}
+.advanced{
+    color: #e83c16;
+    font-weight: lighter;
+}
+
+.hl{
+    background-color: white;
+}

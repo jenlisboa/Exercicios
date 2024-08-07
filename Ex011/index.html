@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media on HTML</title>
+</head>
+<body>
+    <H1>Dinamic Imagens</H1>
+    <P>Try opening this website with different devices or just enlarging or shrinking the size of of the screen on your browser </P>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="flexible imagem">
+    </picture>
+
+    <h1>Reproduzing audio</h1>
+    <p>Learning how to reproduce audios in HTML</p>
+    <audio controls autoplay muted>
+        <source src="mida/lisa.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

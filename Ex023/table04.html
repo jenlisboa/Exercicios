@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th,td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Exercise</h1>
+    <table>
+        <caption>
+            Favorite Movies
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Groups</th>
+                <th scope="col">Names</th>
+                <th colspan="3" scope="colgroup">Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Female</th>
+                <td>Anne Mary</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Avengers</td>
+            </tr>
+            <tr>
+                <td>Beatriz Santos</td>
+                <td> Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Smith</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Male</th>
+                <td>Bruno Mendes</td>
+                <td>The Intouchables</td>
+                <td>Memento</td>
+                <td>Gladiator</td>
+            </tr>
+            <tr>
+                <td>Daniel Jones</td>
+                <td>Well-E</td>
+                <td>Old Boy</td>
+                <td>Men In Black</td>
+            </tr>
+            <tr>
+                <td>Fabio Green</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

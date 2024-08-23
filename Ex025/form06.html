@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: lightseagreen;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Examples</h1>
+    <form action="register.py" method="post" autocomplete="on">
+        <p>
+            <label for="icolor">Color</label>
+            <input type="color" name="color" id="icolor" value="#00ff00">
+        </p>
+        <p>
+            <label for="ilevel"> Level of Satisfaction</label>
+            <input type="range" name="level" id="ilevel" min="1" max="5">
+        </p>
+        <p>
+            <label for="ipic"> Perfile Picture</label>
+            <input type="file" name="pic" id="ipic">
+
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

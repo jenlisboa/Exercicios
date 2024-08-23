@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Form></Form></title>
+</head>
+<body>
+    <h1>Form Examples</h1>
+    <form action="register.py" method="get" autocomplete="off">
+        <p>
+            <label for="iyear">What year where you born?</label>
+            <input type="number" name="year" id="iyear" min="1900" max="2024" oninput="calage()">
+
+        </p>
+        <p>
+            <label for="iage">Your age is:</label>
+            <output id="iage">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <script>
+        function calage() {
+            let actual = new Date().getFullYear();
+        iage.innerHTML = Number(actual) - Number(iyear.value)
+        }
+    </script>
+</body>
+</html>

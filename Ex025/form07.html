@@ -6,6 +6,46 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <h1>Form Examples</h1>
+    <form action="register.py" method="post" autocomplete="on">
+        <p>
+            <label for="ista">State</label>
+            <select name="state" id="ista">
+
+                <option value="" selected>Choose</option>
+                <optgroup label="Southeast">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">Sao Paulo</option>
+                </optgroup>
+
+                    <optgroup label="Northeast">
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceara</option>
+                        <option value="ma">Maranhao</option>
+                    </optgroup>
+                
+            </select>
+        </p>
+        <p>
+            <label for="iocc">Occupation</label>
+            <input type="text" name="occ" id="iocc" list="isocc">
+            <datalist id="isocc">
+                <option>Cook</option>
+                <option >Driver</option>
+                <option value="cs">Customer Service</option>
+                <option value="hr">Human Resource</option>
+            </datalist>
+
+        </p>
+        <p>
+            <label for="imsg">Message</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="type your message"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
 </body>
 </html>
